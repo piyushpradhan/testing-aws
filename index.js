@@ -3,7 +3,7 @@ const app = express();
 const port = 3000; 
 
 app.get('/', (req, res) => {
-	res.send("Here's some response for the dummy request");
+	res.sendFile('/projects/cloud/trying-aws/nodeaws/client/index.html');
 }); 
 
 app.listen(port, () => {
