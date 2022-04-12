@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
 	res.sendFile('/projects/cloud/trying-aws/nodeaws/client/index.html');
 }); 
 
+app.get('/api/', (req, res) => {
+	res.send("Proper response received");
+});
+
 app.listen(port, () => {
 	console.log("The app is up and running");
 });
